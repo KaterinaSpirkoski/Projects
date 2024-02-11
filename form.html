@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- LOCAL MAIN CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- BOOTSTRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- FONT AWESOME ICONS -->
+    <script
+      src="https://kit.fontawesome.com/4eb4fe2df7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <nav
+      class="navbar navbar-expand-lg bg-light-yellow fw-semibold py-lg-4 py-0"
+    >
+      <div class="container">
+        <a class="navbar-brand text-uppercase fw-bold" href="index.html"
+          ><img
+            src="images/Logo.png"
+            class="logo m-auto d-block"
+            alt="brainster-logo"
+          />Brainster</a
+        >
+        <button
+          class="btn d-lg-none d-block"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <div class="hamb_icon">
+            <div class="top_line bar"></div>
+            <div class="middle_line bar"></div>
+            <div class="bottom_line bar"></div>
+          </div>
+        </button>
+        <div
+          class="offcanvas offcanvas-end bg-dark w-100"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close btn-close-white ms-auto"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto me-auto mb-1 mb-lg-0 lh-1">
+              <li class="nav-item mb-4 mb-lg-0">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="https://brainster.co/marketing/"
+                  target="_blank"
+                  >Академија за маркетинг</a
+                >
+              </li>
+              <li class="nav-item mb-4 mb-lg-0">
+                <a
+                  class="nav-link"
+                  href="https://brainster.co/front-end/"
+                  target="_blank"
+                  >Академија за програмирање</a
+                >
+              </li>
+              <li class="nav-item mb-4 mb-lg-0">
+                <a
+                  class="nav-link"
+                  href="https://brainster.co/data-science/"
+                  target="_blank"
+                  >Академија за data science</a
+                >
+              </li>
+              <li class="nav-item mb-4 mb-lg-0">
+                <a
+                  class="nav-link"
+                  href="https://brainster.co/graphic-design/"
+                  target="_blank"
+                  >Академија за дизајн</a
+                >
+              </li>
+            </ul>
+            <a href="form.html" class="btn btn-danger bg-red btn-sm fw-semibold"
+              >Вработи наш студент</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav bar ends here -->
+    <main class="bg-yellow pb-5">
+      <div class="container py-5">
+        <div class="row justify-content-center pb-5">
+          <div class="col-12 col-md-10">
+            <h1 class="display-5 fw-bold text-center py-5">Вработи студенти</h1>
+            <form class="form py-5" id="form">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="form-group w-100">
+                    <label for="username" class="mb-1 fw-semibold"
+                      >Име и презиме</label
+                    >
+                    <input
+                      type="text"
+                      id="username"
+                      title="Внесете го вашето име и презиме"
+                      placeholder="Вашето име и презиме"
+                      class="fst-italic w-100 p-3"
+                    />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                    <small class="mt-2 mt-md-0"> Error message</small>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="form-group">
+                    <label for="compName" class="mb-1 fw-semibold"
+                      >Име на компанија</label
+                    >
+                    <input
+                      type="text"
+                      id="compName"
+                      name="compName"
+                      title="Внесете го името на вашата компанија"
+                      placeholder="Име на вашата компанија"
+                      maxlength="38"
+                      class="fst-italic w-100 p-3"
+                    />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                    <small class="mt-2 mt-md-0"> Error message</small>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="form-group">
+                    <label for="email" class="mb-1 fw-semibold"
+                      >Контакт имејл</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      title="Внесете ја вашата имејл адреса"
+                      placeholder="Контакт имејл на вашата компанија"
+                      class="fst-italic w-100 p-3"
+                    />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                    <small> Error message</small>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="form-group">
+                    <label for="phoneNum" class="mb-1 fw-semibold"
+                      >Контакт телефон</label
+                    >
+                    <input
+                      type="tel"
+                      id="phoneNum"
+                      name="phoneNum"
+                      title="Внесете телефонски број за контакт"
+                      placeholder="Контакт телефон на вашата компанија"
+                      class="fst-italic w-100 p-3"
+                    />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                    <small> Error message</small>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="form-group" id="custom-select">
+                    <label for="studentSelect" class="mb-2 fw-semibold d-flex"
+                      >Тип на студент</label
+                    >
+                    <select
+                      name="studentSelect"
+                      id="studentSelect"
+                      class="w-100 p-3 fw-semibold"
+                    >
+                      <option
+                        value=""
+                        selected="true"
+                        disabled="disabled"
+                        hidden
+                      >
+                        Изберете тип на студент
+                      </option>
+                      <option value="MarketingS" class="w-100 fw-semibold">
+                        Студенти од маркетинг
+                      </option>
+                      <option value="CodingS" class="w-100 fw-semibold">
+                        Студенти од програмирање
+                      </option>
+                      <option value="dataScienceS" class="w-100 fw-semibold">
+                        Студенти од data science
+                      </option>
+                      <option value="designS" class="w-100 fw-semibold">
+                        Студенти од дизајн
+                      </option>
+                    </select>
+
+                    <!-- <button
+                      class="dropdown-toggle w-100 p-3 d-flex justify-content-between fw-semibold"
+                      type=""
+                      id="studentSelect"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Изберете тип на студент
+                    </button>
+                    <ul
+                      class="dropdown-menu w-100 mt-2"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li
+                        id="option1"
+                        class="dropdown-item fw-semibold dropdown"
+                      >
+                        Студенти од маркетинг
+                      </li>
+                      <hr class="dropdown-divider" />
+                      <li
+                        id="option2"
+                        class="dropdown-item fw-semibold dropdown"
+                      >
+                        Студенти од програмирање
+                      </li>
+                      <hr class="dropdown-divider" />
+                      <li
+                        id="option3"
+                        class="dropdown-item fw-semibold dropdown"
+                      >
+                        Студенти од data science
+                      </li>
+                      <hr class="dropdown-divider" />
+                      <li id="option4" class="dropdown-item fw-semibold">
+                        Студенти од дизајн
+                      </li>
+                    </ul> -->
+                    <small> Error message</small>
+
+                    <div class="error"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 content-down">
+                  <div class="form-group mt-4">
+                    <button
+                      type="submit"
+                      id="submit"
+                      class="btn btn-danger bg-red w-100 py-3 mt-2"
+                    >
+                      ИСПРАТИ
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center text-white fw-bold bg-color p-2">
+      <p>
+        <small
+          >Изработено со &#10084;&#65039; од студентите на Brainster
+        </small>
+      </p>
+    </footer>
+
+    <!-- POPPER JS -->
+    <script src="validation.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

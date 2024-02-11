@@ -1,0 +1,191 @@
+/* Background colors style */
+.bg-red {
+  background-color: #ea3b27;
+}
+.bg-yellow {
+  background-color: #ebbf30;
+}
+.bg-light-yellow {
+  background-color: #f0c537;
+}
+.bg-color {
+  background-color: #33333a;
+}
+
+/* NAV BAR style */
+.nav-link {
+  color: black;
+  margin-right: 15px;
+}
+.nav-link:hover {
+  color: #ff0000;
+}
+.logo {
+  width: 2.1875rem;
+}
+.navbar-brand {
+  font-size: 8px;
+}
+.offcanvas.offcanvas-end {
+  border: none;
+}
+.offcanvas.show {
+  background-color: rgb(65, 65, 65);
+}
+.offcanvas.showing ul li a {
+  color: rgb(255, 255, 255);
+}
+.offcanvas.show ul li a {
+  color: rgb(255, 255, 255);
+}
+.offcanvas ul li a {
+  color: rgb(0,  0,  0);
+}
+.btn-close {
+  opacity: 0.9;
+}
+
+/* HAMBURGER MENU style */
+.top_line {
+  width: 2.1875rem;
+  margin: 5px;
+}
+.middle_line {
+  width: 25px;
+  margin-left: 0.9375rem;
+}
+.bottom_line {
+  width: 0.9375rem;
+  margin-left: 1.5625rem;
+}
+.bar {
+  background-color: black;
+  opacity: 0.7;
+  height: 4px;
+  margin-bottom: 5px;
+  border-radius: 2px;
+}
+/* BANNER */
+.banner {
+  background-image: linear-gradient(
+      rgba(49, 51, 53, 0.7),
+      rgba(49, 51, 53, 0.7)
+    ),
+    url("images/bg-library.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 25rem;
+}
+/* CARDS */
+.card-date {
+  font-size: 0.625rem;
+}
+.card-body span {
+  font-size: 0.75rem;
+}
+.card .card-img-top {
+  aspect-ratio: 16 /9;
+  object-fit: cover;
+}
+.card {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+label {
+  cursor: pointer;
+}
+.div-input {
+  border-right: 1px solid #555555;
+  border-bottom: 1px solid #555555;
+}
+/* FORM*/
+
+.dropdown-toggle::after {
+  border: none !important;
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f107" !important;
+  vertical-align: 0;
+}
+.form-group {
+  position: relative;
+  padding-bottom: 1.5625rem;
+}
+.form-group.success input {
+  border-color: #2ecc71;
+}
+.form-group.success select {
+  border-color: #2ecc71;
+}
+.form-group.error input {
+  border-color: #ff0000;
+}
+.form-group.error select {
+  border-color: #ff0000;
+}
+
+.form-group i {
+  visibility: hidden;
+  position: absolute;
+  top: 2.5rem;
+  right: 0.625rem;
+}
+.form-group.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+.form-group.error i.fa-circle-exclamation {
+  color: #ff0000;
+  visibility: visible;
+}
+.form-group small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+}
+input,
+.dropdown button,
+select {
+  border: 2px solid white;
+  border-radius: 4px;
+}
+.dropdown button {
+  background-color: white;
+}
+
+.form-group.error small {
+  color: #ff0000;
+  visibility: visible;
+}
+@media (max-width: 770px) {
+  .content-down {
+    padding-top: 10rem;
+  }
+}
+
+/* PAGINATION  */
+#loadMore {
+  display: inline-block;
+}
+@media (max-width: 430px) {
+  .container .pagination .paginationCard {
+    display: none;
+  }
+  .container .pagination .paginationCard:nth-child(1),
+  .container .pagination .paginationCard:nth-child(2),
+  .container .pagination .paginationCard:nth-child(3),
+  .container .pagination .paginationCard:nth-child(4),
+  .container .pagination .paginationCard:nth-child(5),
+  .container .pagination .paginationCard:nth-child(6) {
+    display: inline-block;
+  }
+}

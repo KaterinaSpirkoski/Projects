@@ -1,0 +1,25 @@
+.album-page-wrapper {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.album-image {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  filter: brightness(90%);
+}
+.album-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.album-page span {
+  margin-left: 5px;
+  color: rgb(93, 91, 91);
+}
+.album-info p {
+  font-weight: 500;
+  margin: 0;
+}

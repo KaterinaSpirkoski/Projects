@@ -1,0 +1,59 @@
+.Footer {
+  margin-top: 60px;
+  padding-top: 30px;
+  background-color: rgb(249, 249, 249);
+  padding-bottom: 30px;
+}
+.footer-inner {
+  width: 95%;
+  margin: auto;
+  display: flex;
+}
+.inner {
+  flex-basis: 25%;
+  padding-left: 10px;
+}
+.event-info,
+.Registration,
+.schedule {
+  border-left: 2px solid #e7e7e7;
+}
+.inner h3 {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.social-share-links {
+  display: flex;
+}
+.social-networks a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 20px;
+}
+.social-networks a:hover {
+  background-color: grey;
+  color: white;
+}
+.list {
+  padding-left: 0;
+}
+
+.items {
+  list-style-type: none;
+}
+.links {
+  text-decoration: none;
+  color: #000000;
+  line-height: 2;
+}
+.links:hover {
+  color: orange;
+}

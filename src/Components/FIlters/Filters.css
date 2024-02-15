@@ -1,0 +1,53 @@
+.Filters-section {
+  display: flex;
+}
+.Filters {
+  flex-basis: 30%;
+  margin-left: 20px;
+}
+.Filters h3 {
+  font-weight: 800;
+  font-size: 22px;
+}
+.Filters-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.cards {
+  flex-basis: 70%;
+}
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+}
+.Badget {
+  padding: 1px 12px;
+  border-radius: 5em;
+  background-color: lightgrey;
+  margin-right: 25px;
+}
+
+.Category:hover span {
+  background-color: orange;
+  color: grey;
+}
+.Category:hover p {
+  color: orange;
+  font-weight: bold;
+}
+
+.active p {
+  color: orange;
+  font-weight: bold;
+}
+.active span {
+  background-color: orange;
+  color: grey;
+}
